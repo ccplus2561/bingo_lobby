@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>兵果大廳</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="lobby">
+  <header class="lobby__head">
+    <h1 class="lobby__title">兵果大廳</h1>
+    <p class="lobby__sub">選擇你要進入的模式</p>
+    <button id="sfxBtn" class="sfx-btn" type="button" data-audio="sfx" aria-label="音效開關" aria-pressed="true">🔊</button>
+  </header>
+
+  <section class="group" aria-labelledby="gPlayer">
+    <h2 id="gPlayer" class="group__title">我要玩</h2>
+    <div class="group__grid">
+      <button class="mode-btn mode-btn--solo" type="button" data-mode="solo">
+        <span class="mode-btn__icon" aria-hidden="true">🎴</span>
+        <span class="mode-btn__name">兵果電子卡</span>
+        <span class="mode-btn__tag">個人</span>
+      </button>
+      <button class="mode-btn mode-btn--multi" type="button" data-mode="multi">
+        <span class="mode-btn__icon" aria-hidden="true">👥</span>
+        <span class="mode-btn__name">兵果電子卡</span>
+        <span class="mode-btn__tag">多人</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="group" aria-labelledby="gHall">
+    <h2 id="gHall" class="group__title">現場大螢幕</h2>
+    <div class="group__grid">
+      <button class="mode-btn mode-btn--spectate" type="button" data-mode="spectate">
+        <span class="mode-btn__icon" aria-hidden="true">👀</span>
+        <span class="mode-btn__name">兵果旁觀模式</span>
+        <span class="mode-btn__tag">多人</span>
+      </button>
+      <button class="mode-btn mode-btn--host" type="button" data-mode="host">
+        <span class="mode-btn__icon" aria-hidden="true">🎤</span>
+        <span class="mode-btn__name">兵果主持模式</span>
+        <span class="mode-btn__tag">多人</span>
+      </button>
+    </div>
+  </section>
+
+  <p class="lobby__hint">鍵盤 1–4 可快速進入，方向鍵移動選取</p>
+</main>
+
+<script src="audio.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
